@@ -28,7 +28,7 @@ export const getDb = async () => {
   const store = trans.objectStore('jate');
   const request = store.get(1); //had to change from getAll to get(1)
   const result = await request;
-  console.log('retrieving the things', result.value)
+  // console.log('retrieving the things', result.value)
   return result?.value
 };
 
